@@ -61,7 +61,7 @@ Ext.define('App.controller.Main', {
         
         // Get and update product button
         var detailBtn = card.down('#productBtn');
-        detailBtn.setText(record.get('name'));
+        detailBtn.setText(record.get('fone'));
         
         // Add custom tap listener for product button
         detailBtn.on({
@@ -72,7 +72,11 @@ Ext.define('App.controller.Main', {
     
     onDetailButtonTap: function() {
         var record = this;
-        Ext.Msg.alert(record.get('name'), record.get('description'), Ext.emptyFn);
+        document.location.href = 'tel:{fone}';
+
+
+
+        
     },
     
     onMainViewActiveItemChange: function(comp, activeItem, oldItem) {

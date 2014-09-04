@@ -20,7 +20,7 @@ Ext.define('App.view.Detail', {
                 id: 'productBtn',
                 xtype: 'button',
                 ui: 'confirm',
-                margin: 10,
+                margin: 00,
                 text: ''
             }
         ]

@@ -12,7 +12,7 @@ Ext.define("App.view.Main", {
         items: [
             {
                 id: 'home',
-                title: 'Welcome',
+                title: 'Inicial',
                 iconCls: 'home',
                 
                 items: [
@@ -24,7 +24,7 @@ Ext.define("App.view.Main", {
             
             {
                 id: 'sections',
-                title: 'NestedList',
+                title: 'Jeretel',
                 iconCls: 'bookmarks',
                 
                 items: [

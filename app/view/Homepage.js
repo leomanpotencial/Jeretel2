@@ -13,7 +13,7 @@ Ext.define('App.view.Homepage', {
             {
                 xtype: 'titlebar',
                 docked: 'top',
-                title: 'NestedList MVC Demo'
+                title: 'Jeretel - Lista Telefônica Online'
             },
 
             {

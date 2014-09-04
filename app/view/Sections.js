@@ -9,8 +9,8 @@ Ext.define('App.view.Sections', {
     ],
     
     config: {
-        title: 'Nested Sections',
-        useTitleAsBackText: false,
+        title: 'Menu Principal',
+        useTitleAsBackText: true,
         onItemDisclosure: true,
         store: 'Sections',
         detailCard: {
@@ -23,6 +23,6 @@ Ext.define('App.view.Sections', {
         return '<div>{name}</div>';
     },
     getItemTextTpl: function(node) {
-        return '<div><strong>{name}:</strong> <em>{description}</em></div>';
+        return '<div><strong>{name}:</strong> <em>{description}</em></br>tste{fone}</div>';
     }
 });
