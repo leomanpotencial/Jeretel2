@@ -75,8 +75,6 @@ Ext.define('App.controller.Main', {
     
     onDetailButtonTap: function() {
 
-        return '<div><strong>{fone}</strong></div>';
-
         
 window.open('tel:'+contactNo)
 
