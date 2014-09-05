@@ -74,10 +74,7 @@ Ext.define('App.controller.Main', {
     
     onDetailButtonTap: function() {
 
-        var fonedetailBtn = card.down('#fonedetailBtn');
-        fonedetailBtn.setText(record.get('fone'));
-        
-        document.location.href = 'tel:{fonedetailBtn}';            
+document.location.href = "tel:"+fone;
         
     },
     
