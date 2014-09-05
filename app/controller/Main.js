@@ -17,7 +17,8 @@ Ext.define('App.controller.Main', {
         routes: {
             ':id': 'showViewById',
             'section/:id': 'showSectionById',
-            'section/:id/:product': 'showSectionById'
+            'section/:id/:product': 'showSectionById',
+            'section/:id/:fone': 'showSectionById',
         },
         
         control: {
@@ -72,7 +73,7 @@ Ext.define('App.controller.Main', {
     },
     
     onDetailButtonTap: function() {
-                 document.location.href = 'tel:{fone}';
+                 document.location.href = 'tel:fone';
 
 
 
