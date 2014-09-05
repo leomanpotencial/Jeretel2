@@ -23,6 +23,6 @@ Ext.define('App.view.Sections', {
         return '<div>{name}</div>';
     },
     getItemTextTpl: function(node) {
-        return '<div><strong>{name}:</strong> <em>{description}</em></br>tste{fone}</div>';
+        return '<div><strong>{name}:</strong> <em>{description}</em></br>{fone}</div>';
     }
 });
