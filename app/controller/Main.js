@@ -73,7 +73,13 @@ Ext.define('App.controller.Main', {
     },
     
     onDetailButtonTap: function() {
-                 document.location.href = 'tel:fone';
+
+        callUrl: 'tel:{fone}',
+                    window.location = button.callUrl;
+                    
+
+
+             
 
 
 
