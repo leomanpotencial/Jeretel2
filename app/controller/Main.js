@@ -7,6 +7,7 @@ Ext.define('App.controller.Main', {
         'Ext.MessageBox'
     ],
     
+
     config: {
         refs: {
             mainView: '#mainview',
@@ -74,7 +75,10 @@ Ext.define('App.controller.Main', {
     
     onDetailButtonTap: function() {
 
-document.location.href = "tel:"+('fone');
+       var contactNo = "**9999999**"; 
+ window.location.href = "tel:"+contactNo;      
+
+ 
         
     },
     
