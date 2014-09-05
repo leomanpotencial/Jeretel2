@@ -72,7 +72,7 @@ Ext.define('App.controller.Main', {
     
     onDetailButtonTap: function() {
         var record = this;
-        document.location.href = 'tel:+1-800-555-1234';
+        document.location.href = 'tel:{fone}';
 
 
 
