@@ -4,7 +4,7 @@ Ext.define('App.view.Detail', {
     id: 'detailcard',
     
     config: {
-        scrollable: true,
+        scrollable: false,
         
         defaults: {
             styleHtmlContent: true
