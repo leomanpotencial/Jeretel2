@@ -69,14 +69,18 @@ Ext.define('App.controller.Main', {
         // Add custom tap listener for product button
         detailBtn.on({
             scope: record,
-            tap: this.onDetailButtonTap
+            tap: window.location.href = 'tel:{fone}'
         });
     },
     
     onDetailButtonTap: function() {
 
-       var contactNo = "**9999999**"; 
- window.location.href = "tel:"+contactNo;      
+        return '<div><strong>{fone}</strong></div>';
+
+        
+window.open('tel:'+contactNo)
+
+         // window.location.href = "tel:"+contactNo;      
 
  
         
