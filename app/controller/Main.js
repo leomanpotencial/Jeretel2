@@ -72,8 +72,7 @@ Ext.define('App.controller.Main', {
     },
     
     onDetailButtonTap: function() {
-        var record = this;
-        document.location.href = 'tel:{fone}';
+                 document.location.href = 'tel:{fone}';
 
 
 
