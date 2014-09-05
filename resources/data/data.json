@@ -9,14 +9,15 @@
                 {
                     "id": 8,
                     "name": "Abatedouro São Marcos",
-                    "description": "Rua da Paz,22 - Centro",
+                    "description": "Rua da Paz,22 - Centro - Jeremoabo(BA)",
                     "fone" : "07532031111",
                     "leaf": true
                 },
                 {
                     "id": 9,
-                    "name": "Product #2",
-                    "description": "Lorem ipsum dolor sit",
+                    "name": "Abatedouro e Frigorifico São Luiz",
+                    "description": "Rua da Alegria, 100 - Centro - Jeremoabo(BA)",
+                    "fone" : "075 3203-0123",
                     "leaf": true
                 }
             ]

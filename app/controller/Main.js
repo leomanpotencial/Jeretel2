@@ -18,7 +18,7 @@ Ext.define('App.controller.Main', {
             ':id': 'showViewById',
             'section/:id': 'showSectionById',
             'section/:id/:product': 'showSectionById',
-            'section/:id/:fone': 'showSectionById',
+          
         },
         
         control: {
@@ -74,9 +74,10 @@ Ext.define('App.controller.Main', {
     
     onDetailButtonTap: function() {
 
-        callUrl: 'tel:{fone}';
-        document.location.href = callUrl;
-                    
+        var fonedetailBtn = card.down('#fonedetailBtn');
+        fonedetailBtn.setText(record.get('fone'));
+        
+        document.location.href = 'tel:{fonedetailBtn}';            
         
     },
     
