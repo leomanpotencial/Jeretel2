@@ -2,12 +2,10 @@ Ext.define('App.controller.Main', {
     extend: 'Ext.app.Controller',
     
     requires: [
-        'App.store.Sections',
         'App.view.Detail',
         'Ext.MessageBox'
     ],
     
-
     config: {
         refs: {
             mainView: '#mainview',
@@ -18,8 +16,7 @@ Ext.define('App.controller.Main', {
         routes: {
             ':id': 'showViewById',
             'section/:id': 'showSectionById',
-            'section/:id/:product': 'showSectionById',
-          
+            'section/:id/:product': 'showSectionById'
         },
         
         control: {
@@ -64,24 +61,18 @@ Ext.define('App.controller.Main', {
         
         // Get and update product button
         var detailBtn = card.down('#productBtn');
-        detailBtn.setText(record.get('fone'));
+        detailBtn.setText(record.get('name'));
         
         // Add custom tap listener for product button
         detailBtn.on({
             scope: record,
-            tap: window.location.href = 'tel:{fone}'
+            tap: this.onDetailButtonTap
         });
     },
     
     onDetailButtonTap: function() {
-
-        
-window.open('tel:'+contactNo)
-
-         // window.location.href = "tel:"+contactNo;      
-
- 
-        
+        var record = this;
+        document.location.href = 'tel:'+(record.get('fone'));
     },
     
     onMainViewActiveItemChange: function(comp, activeItem, oldItem) {
