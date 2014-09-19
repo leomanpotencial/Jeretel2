@@ -8,11 +8,17 @@ Ext.define('App.view.Sections', {
         'App.view.Detail'
     ],
     
+
+
+        
+
+
     config: {
         title: 'Menu Principal',
         useTitleAsBackText: true,
         onItemDisclosure: true,
         store: 'Sections',
+        tabBarPosition: 'bottom',
         detailCard: {
             xtype: 'detailcard'
         },
