@@ -17,6 +17,7 @@ Ext.define('App.view.Sections', {
         title: 'Menu Principal',
         useTitleAsBackText: true,
         onItemDisclosure: true,
+        scrollable: false,
         store: 'Sections',
         tabBarPosition: 'bottom',
         detailCard: {
@@ -29,6 +30,6 @@ Ext.define('App.view.Sections', {
         return '<div>{name}</div>';
     },
     getItemTextTpl: function(node) {
-        return '<div><strong>{name}</strong></div>';
+        return '<div><p><img src="/img/{img}" width="50" height="50"><strong>{name}</strong></p></div>';
     }
 });

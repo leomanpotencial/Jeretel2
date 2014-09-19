@@ -2,11 +2,17 @@ Ext.define("App.view.Main", {
     extend: 'Ext.tab.Panel',
     id: 'mainview',
     
+
     config: {
-        tabBarPosition: 'bottom',
+        tabBarPosition: 'top',
         
         defaults: {
             layout: 'fit'
+
+
+
+
+
         },
         
         items: [
@@ -22,12 +28,16 @@ Ext.define("App.view.Main", {
                 ]
             },
             
+
+
             {
                 id: 'sections',
                 title: 'Jeretel',
                 iconCls: 'bookmarks',
                 
                 items: [
+
+
                     {
                         xtype: 'sectionslist'
                     }
@@ -36,6 +46,9 @@ Ext.define("App.view.Main", {
         ]
     }
 });
+
+
+
 
 /**
  * Fix for Bug TOUCH-2665 (Sencha Touch 2.0.1 RC)
