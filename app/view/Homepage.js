@@ -3,9 +3,6 @@
 Ext.define('App.view.Homepage', {
     extend: 'Ext.Panel',
     xtype: 'homepage',
-    
-    
-
 
 
     requires: [

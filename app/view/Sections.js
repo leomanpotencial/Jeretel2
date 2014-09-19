@@ -30,6 +30,6 @@ Ext.define('App.view.Sections', {
         return '<div>{name}</div>';
     },
     getItemTextTpl: function(node) {
-        return '<div><p><img src="/img/{img}" width="50" height="50"><strong>{name}</strong></p></div>';
+        return '<div><p><img src="{img}" width="50" height="50"><strong>{name}</strong></p></div>';
     }
 });

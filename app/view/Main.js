@@ -4,14 +4,10 @@ Ext.define("App.view.Main", {
     
 
     config: {
-        tabBarPosition: 'top',
+        tabBarPosition: 'bottom',
         
         defaults: {
             layout: 'fit'
-
-
-
-
 
         },
         
@@ -32,7 +28,7 @@ Ext.define("App.view.Main", {
 
             {
                 id: 'sections',
-                title: 'Jeretel',
+                title: 'Clique aqui!',
                 iconCls: 'bookmarks',
                 
                 items: [
@@ -41,6 +37,7 @@ Ext.define("App.view.Main", {
                     {
                         xtype: 'sectionslist'
                     }
+
                 ]
             }
         ]
